@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 1</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<header>
+    <h1>Web Programing</h1>
+    <style>
+        #nav{
+            background-color: skyblue;
+        }
+        #navUl{
+            margin: 0;
+            padding: 0;
+            width: 300px;
+        }
+        #navUlLi {
+            display: inline-block;
+            list-style-type: none;
+            padding: 0px 15px;
+        }
+        #navUlLiA{
+            color: white;
+            text-decoration: none;
+        }
+        table{
+            border-collapse:collapse;
+
+        }
+        td,th{
+            padding: 10px 30px;
+            
+        }
+        thead{
+            background-color: aliceblue;
+
+        }
+        tbody tr:hover{
+            background-color: yellowgreen;
+        }
+        .square01 {
+    width: 80px;
+    height: 80px;
+    background-color: #ffd67a;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+}
+    </style>
+</header>
+<nav id="nav">
+    <ul id="navUl">
+        <li id="navUlLi"><a id="navUlLiA" href="#week1">Week 1</a></li>
+        <li id="navUlLi"><a id="navUlLiA" href="#">Week 2</a></li>
+        <li id="navUlLi"><a id="navUlLiA" href="#">Week 3</a></li>
+        <li id="navUlLi"><a id="navUlLiA" href="#">Week 4</a></li>
+    </ul>
+</nav>
+<hr>
+<hr>
+
+<main>
+    <b>웹에 관하여</b>
+    <br>
+    <br>
+    <section>
+        <details>
+            웹의 기본 목적은 한 컴퓨터에서 만든 문서를 다른 컴퓨터에서 쉽게 볼 수 있게 하는 것이다.
+            <summary>웹의 기본 목적</summary>
+        </details>
+        <details>
+            전세계의 컴퓨터들을 인터넷으로 연결한 시스템을 www, 즉 웹이라고 부른다
+            <summary>왜 Why?</summary>
+        </details>
+    </section>
+    <br>
+    <br>
+    <section>
+        <table border="1">
+            <caption><strong>Weekly Schedule</strong></caption>
+            
+            <thead>
+            <th align="center">Week</th>
+            <th align="center">Date</th>
+            <th align="center">Contents</th>
+            </thead>
+            <tbody>
+            <tr align="center">
+                <td>1</td>
+                <td>Sept.2</td>
+                <td>
+                    <ul>
+                        <li>강의개요</li>
+                        <li>웹의 개념과 구조</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>2</td>
+                <td>Sept.9</td>
+                <td>
+                    HTML Review
+                </td>
+            </tr>
+            <tr align="center">
+                <td>3</td>
+                <td>Sept.16</td>
+                <td>
+                    CSS Review
+                </td>
+            </tr>
+            <tr align="center">
+                <td>4</td>
+                <td>Sept.23</td>
+                <td>
+                    JavaScript
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="week1">
+        <ol>
+            <li><b>Week 1</b></li>
+            <ul>
+                <li><a href="https://github.com/shleee1/WebP/blob/main/Syllabus.pdf">강의 개요</a></li>
+                <li><a href="https://github.com/shleee1/WebP/blob/main/%EC%9B%B9%EC%9D%98%EA%B0%9C%EB%85%90%EA%B3%BC%EA%B5%AC%EC%A1%B0.pdf">웹의 개념과 역사</a></li>
+                <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+                <ol>
+                    <li>설치</li>
+                    <li>유용한 plug-ins</li>
+                    <ul>
+                        <li>Material Theme</li>
+                        <li>Prettier</li>
+                        <li>Live server</li>
+                        <li>Material Theme</li>
+                        <li>Auto Rename Tag</li>
+                        <li>indent-rainbow</li>
+                    </ul>
+                    <li>EMMET</li>
+                </ol>
+            </ul>
+
+            <hr>
+            <section>
+                <li><b>Week 2: <a href="https://github.com/shleee1/WebP/blob/main/HTML5-Review%20(2).pdf">HTML Review</a></b></li>
+            </section>
+            <section>
+                <br>
+                <b>Input Types</b>
+                <br><br>
+                <form>
+                    <u>Check Box</u>
+                    <br>
+                    <input type="checkbox" name="HTML5" value="html">
+                    HTML5
+                    <input type="checkbox" name="CSS3" value="css">
+                    CSS3
+                    <input type="checkbox" name="JavaScript" value="JavaScript">
+                    JavaScript
+                    <br><br>
+                    <u>Radio Button</u>
+                    <br>
+                    <input type="radio" name="HTML5" value="html">
+                    HTML5
+                    <input type="radio" name="CSS3" value="css">
+                    CSS3
+                    <input type="radio" name="JavaScript" value="JavaScript">
+                    JavaScript
+                    <br><br>
+                    <u>Combo Box</u>
+                    <br>
+                    <br>
+                    <select name="wp">
+                        <option value="html">HTML5</option>
+                        <option value="css">CSS3</option>
+                        <option value="js">JavaScript</option>
+                    </select>
+                </form>
+            </section>
+            <hr>
+            <section id="week3">
+                <li><b>Week 3: CSS Review</b></li>
+                <ul>
+                    <li>Sectors: *, tag, #id, .class, 가상 클래스, attribute</li>
+                    <li>Properrties: background-color, background, color, border-color, font-size, text-align,text-decoration,font family,...</li>
+                    <li>Box model</li>
+                    <ul>
+                        <li>block 요소</li>
+                        <li>inline 요소</li>
+                    </ul>
+                    <li>display: block,inline,inline-block</li>
+                    <li>position: absolute,relative,fixed,float</li>
+                </ul>
+                <br>
+                <div class="square01"></div>
+            </section>
+            <hr>
+            <section id="week3">
+                <li><b>Week 4: </b></li>
+            </section>
+        </ol>
+        <hr>
+    </section>
+</main>
+<footer>
+    Copyright ⓒ 2024 by Sang-Hyeok All Rights Reserved
+</footer>
+</body>
+</html>

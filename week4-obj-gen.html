@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 생성</title>
+    <script>
+        function getStudentCount(){
+            return this.nStudent;
+        }
+        function register(){ this.nStudent++;}
+        function unregister(){ this.nStudent--;}
+        let WebClass=new Object();
+        WebClass.korName="웹프로그래밍";
+        WebClass.engName="Web Programing";
+        WebClass.classCode="V024003";
+        WebClass.nStudent=0;
+        WebClass.register=register;
+        WebClass.unregister=unregister;
+        WebClass.getStudentCount=getStudentCount;
+
+        let WebClass2={
+            korName:"웹프로그래밍",
+            engName:"Web Programing",
+            classCode:"V024003",
+            nStudent:0,
+
+            register:function(){this.nStudent++;},
+            unregister:function(){this.nStudent--;},
+            getStudentCount:function(){
+            return this.nStudent;
+            }
+        };
+        function WebClass3(korName,engName,nStudent){
+            this.korName=korName;
+            this.engName=engName;
+            this.nStudent=nStudent;
+            this.classCode="V024003";
+            this.register=function(){this.nStudent++;}
+            this.unregister=function(){this.nStudent--;}
+            this.getStudentCount=function(){return this.nStudent;}
+        }
+    </script>
+</head>
+<body>
+    <h3>1.직접 객체 만들기</h3>
+    <script>
+        document.write("교과목 이름: "+WebClass.korName+"<br>");
+        document.write("등록 학생 수: "+WebClass.getStudentCount()+"<br>");
+        WebClass.register();
+        document.write("after register, 등록 학생 수: "+WebClass.getStudentCount()+"<br>");
+    </script>
+    <hr>
+    <h3>2. 리터럴 표기법</h3>
+    <script>
+        document.write("교과목 이름: "+WebClass2.korName+"<br>");
+        document.write("등록 학생 수: "+WebClass2.getStudentCount()+"<br>");
+        WebClass2.register();
+        document.write("after register, 등록 학생 수: "+WebClass2.getStudentCount()+"<br>");
+    </script>
+    <hr>
+    <h3>3. Prototype</h3>
+    <script>
+        let web=new WebClass3("웹프로그래밍","Web Programing",0);
+        document.write("교과목 이름: "+web.korName+"<br>");
+        document.write("등록 학생 수: "+web.getStudentCount()+"<br>");
+        web.register();
+        document.write("after register, 등록 학생 수: "+web.getStudentCount()+"<br>");
+    </script>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<body>
+    <div style="display:grid;grid-gap: 10px 20px;
+    grid-template-columns: 100px 100px 100px;">
+        <div style="background-color: aliceblue; grid-column: 1/3;">Item1</div>
+        <div style="background-color: yellow;">Item2</div>
+        <div style="background-color: pink;">Item3</div>
+        <div style="background-color: beige;">Item4</div>
+</div>
+<br><br>
+<hr><br><br>
+<div style="display:grid;grid-template-areas: 'header header'
+'sidebar content' 'footer foooter';
+grid-template-columns: 150px 1fr; grid-template-rows: auto 1fr auto;
+grid-template-columns: 100px 100px 100px;">
+    <div style="background-color: aliceblue; grid-area:header;">Item1</div>
+    <div style="background-color: yellow; grid-area: sidebar;">Item2</div>
+    <div style="background-color: pink; grid-area: content;">Item3</div>
+    <div style="background-color: beige;grid-area: footer;">Item4</div>
+</div>
+</body>
+</html> 

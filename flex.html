@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        
+        .flex-container{
+            display: flex;
+            align-items: center;
+        }
+        .flex-item{
+            flex-basis: 100px;
+            flex-shrink: 1;
+            /*브라우저 크기 조절시 콘텐츠 크기도 바뀜*/
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div style="background-color: aliceblue;" class="flex-item" >Item 1</div>
+        <div style="background-color: pink;" class="flex-item" >Item 2</div>
+        <div style="background-color: yellow;" class="flex-item" >Item 3</div>
+    </div>
+</body>
+</html>
